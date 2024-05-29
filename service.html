@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Donadores</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-primary px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-primary px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-primary px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-primary pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+   
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-primary"><span class="text-dark">Fon</span> App</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                  
+                    <a href="service.html" class="nav-item nav-link">Donadores</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Eventos</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="appointment.html" class="dropdown-item">Deportivos</a>
+                            <a href="opening.html" class="dropdown-item">Artisticos</a>
+                            <a href="team.html" class="dropdown-item">Academicos</a>
+                            <a href="testimonial.html" class="dropdown-item">Otro</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contáctanos</a>
+                </div>
+                <a href="" class="btn btn-primary d-none d-lg-block">Sesión Iniciada</a>
+            </div>
+        </nav>
+    </div>
+   
+    
+    <div class="container-fluid px-0 py-5 my-5">
+        <div class="row justify-content-center bg-appointment mx-0">
+            <div class="col-lg-6 py-5">
+                <div class="p-5 my-5" style="background: rgba(26, 24, 24, 0.821);">
+                    <h1 class="text-white text-center mb-4">¿Quieres hacer un donativo?</h1>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="text-white">Selecciona tu opción:</label>
+                                <select id="gender-select" class="form-control bg-transparent p-4">
+                                    <option value="">--Selecciona una opción--</option>
+                                    <option value="institucion">Institución</option>
+                                    <option value="publico">Público</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="form-institucion" class="hidden">
+                        <!-- Formulario para instituciones -->
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Nombre de la institución" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="No. de Tarjeta" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="mm/aa" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="CVV" required="required" />
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Donar</button>
+                    </form>
+                    <form id="form-publico" class="hidden">
+                        <!-- Formulario para el público en general -->
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Nombre" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Apellido Paterno" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Apellido Materno" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Correo Electronico" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="No. de Tarjeta" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="mm/aa" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="CVV" required="required" />
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Donar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+    
+    <div class="container-fluid px-0 py-5 my-5">
+        <div class="row mx-0 justify-content-center text-center">
+            <div class="col-lg-6">
+                <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">principales</h6>
+                <h1>DONADORES</h1>
+            </div>
+        </div>
+        <div class="owl-carousel service-carousel">
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/ito.png" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">TecNM - Campus Oaxaca</h4>
+                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="">Información General</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/salle.png" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">La Salle Oaxaca</h4>
+                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="">Información General</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-item position-relative">
+                <img class="img-fluid" src="img/anah.png" alt="">
+                <div class="service-text text-center">
+                    <h4 class="text-white font-weight-medium px-3">Universidad Anáhuac Oaxaca</h4>
+                    <p class="text-white px-3 mb-3">Elitr labore sit dolor erat est lorem diam sea ipsum diam dolor duo sit ipsum</p>
+                    <div class="w-100 bg-white text-center p-4" >
+                        <a class="btn btn-primary" href="">Información General</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    <div class="footer container-fluid position-relative bg-dark py-5" style="margin-top: 90px;">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 pr-lg-5 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-3 text-white"><span class="text-primary">Fon</span> App</h1>
+                    </a>
+                    <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    
+                        <div class="col-sm-12 mb-5">
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary px-4">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+          
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+   
+    <script src="js/main.js"></script>
+</body>
+
+</html>
